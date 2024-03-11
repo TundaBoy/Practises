@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>password strength</title>
+</head>
+<body>
+    <form action="#">
+        <label for="password">PASSWORD:</label><br><br>
+        <input type="password" id="password" placeholder="Enter Your Password" onkeyup="checkPasswordStrength()">
+        <p id="passwordStrengthMessage"></p>
+    </form>
+    <script>
+        function checkPasswordStrength(){
+            const passwordInput=document.getElementById("password");
+            const passwordStrengthMessage=document.getElementById("passwordStrengthMessage");
+            if(passwordInput.value.length<6){
+                passwordStrengthMessage.textContent="Password not strong";
+            }
+            else{
+                passwordStrengthMessage.textContent="Strong Password.Proceed!"
+            }
+        }
+    </script>
+</body>
+</html>

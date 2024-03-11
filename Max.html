@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+       <title>Mx no.</title>
+</head>
+<body>
+    <script lang="javascript" type="text/javascript">
+        //prompting the user to enter three numbers
+            var Num1=parseFloat(prompt("Enter the first number:"));
+            var Num2=parseFloat(prompt("Enter the second number:"));
+            var Num3=parseFloat(prompt("Enter the third number:"));
+            //comparing the three numbers to find the greatest
+            var greatestNumber;
+            if (Num1>=Num2 && Num1>=Num3){
+greatestNumber=Num1;
+            }
+            else if(Num2>=Num1 && Num2>=Num3){
+                greatestNumber=Num2;
+            }
+            else{
+                greatestNumber=Num3
+            }
+            //display greatest number in an alert box
+            alert("The greatest number is:"+greatestNumber)
+
+</script>
+</body>
+</html>
